@@ -1,0 +1,46 @@
+$colorbg: blue;
+$widthH: 400px;
+$w: $widthH + 350px;
+
+body{
+    background-color: $colorbg;
+}
+ /*----SASS - VARIABLES ----*/
+h1{
+    color: $colorbg;
+    background-color: aliceblue;
+    width:$widthH;
+}
+
+p{
+    width: $w;
+}
+
+
+/*----SASS - NESTING O ANIDACION de Elementos y Propiedades está desarrollado en "_menu.scss"------*/
+
+
+
+/*---SASS PARTIAL O MODULO---*/
+@import "menu";
+
+
+
+/*----Mixin equivalente a funciones en lenguajes---*/
+@mixin fontStyle($letra, $tamaño){
+    font-size: $tamaño;
+    background-color: lightseagreen;
+    color: $letra;
+
+}
+
+h2{
+    
+    @include fontStyle(white,  30px);
+    
+}
+
+h3{
+    @include fontStyle(blue, 20px);
+    
+}

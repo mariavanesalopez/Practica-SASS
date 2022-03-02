@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body {
+  background-color: blue;
+}
+
+/*----SASS - VARIABLES ----*/
+h1 {
+  color: blue;
+  background-color: aliceblue;
+  width: 400px;
+}
+
+p {
+  width: 750px;
+}
+
+/*----SASS - NESTING O ANIDACION de Elementos y Propiedades está desarrollado en "_menu.scss"------*/
+/*---SASS PARTIAL O MODULO---*/
+ul {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul li {
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(255, 192, 203, 0.5);
+}
+ul li a {
+  text-decoration: none;
+  font-size: x-large;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/*----Mixin equivalente a funciones en lenguajes---*/
+h2 {
+  font-size: 30px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  background-color: lightseagreen;
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
